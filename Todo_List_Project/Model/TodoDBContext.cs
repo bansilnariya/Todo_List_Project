@@ -9,6 +9,6 @@ namespace Todo_List_Project.Model
             
 
         }
-        public DbSet<Todo> Todos{ get; set; }
+        public DbSet<Todo> TodoList{ get; set; }
     }
 }
