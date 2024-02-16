@@ -6,7 +6,7 @@ namespace Todo_List_Project.Model
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Task { get; set; }
 
         public bool IsComplete {  get; set; }
 
