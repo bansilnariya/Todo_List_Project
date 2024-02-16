@@ -4,6 +4,7 @@ using Todo_List_Project.Model;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//This is a Connection string and Connection string name...
 builder.Services.AddDbContext<TodoDBContext>(option => option.UseNpgsql(builder.Configuration.GetConnectionString("MyConnection")));
 
 
