@@ -17,6 +17,6 @@ namespace Todo_List_Project.Model
     class test
     {
         public string Id { get; set; }
-        public string    Name { get; set; }
+        public string Name { get; set; }
     }
 }
