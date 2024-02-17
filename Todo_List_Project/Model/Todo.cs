@@ -9,6 +9,8 @@ namespace Todo_List_Project.Model
         public string Task { get; set; }
 
         public bool IsComplete {  get; set; }
+        public DateTime DateTime { get; set; }  
+
 
     }
 }

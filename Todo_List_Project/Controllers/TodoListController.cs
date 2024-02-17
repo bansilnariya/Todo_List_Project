@@ -5,7 +5,7 @@ using Todo_List_Project.Model;
 
 namespace Todo_List_Project.Properties
 {
-    [Route("api/[controller]")]
+    [Route("Todo")]
     [ApiController]
     public class TodoListController : ControllerBase
     {
@@ -64,6 +64,8 @@ namespace Todo_List_Project.Properties
                     var exite = db.Todos.FirstOrDefault(x => x.Id == id);
                     exite.Task = todo.Task;
                     exite.IsComplete = todo.IsComplete;
+                    exite.DateTime = todo.DateTime;
+
 
                     db.Todos.Update(exite);
                     db.SaveChanges();
